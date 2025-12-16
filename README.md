@@ -4,12 +4,22 @@
 # Faculdade Engenharia de Computação
 
 ## 📌 Índice
--  [Computação Evolucionaria](#computação-evolucionaria)
--  [Inteligência Computacional](#inteligência-computacional)
 -  [Inteligencia Artificial](#inteligencia-artificial)
--  [Repetição de Padrões](#repetição-de-padrões)
+-  [Inteligência Computacional](#inteligência-computacional)
+-  [Computação Evolucionaria](#computação-evolucionaria)
+-  [Reconhecimento de Padrões](#reconhecimento-de-padrões)
 -  []()
 -  []()
+
+---
+
+## Inteligência Artificial
+*(Adicionar descrição e trabalhos aqui)*
+
+---
+
+## Inteligência Computacional
+*(Adicionar descrição e trabalhos aqui)*
 
 ---
 
@@ -29,17 +39,7 @@ Aqui você encontrará projetos realizados na disciplina, abordando algoritmos e
 
 ---
 
-## Inteligência Computacional
-*(Adicionar descrição e trabalhos aqui)*
-
----
-
-## Inteligência Artificial
-*(Adicionar descrição e trabalhos aqui)*
-
----
-
-## Repetição de Padrões
+## Reconhecimento de Padrões
 *(*(Adicionar descrição e trabalhos aqui)*
 
 ---
