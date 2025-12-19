@@ -7,10 +7,10 @@ Olá!
 ---
 
 ## 📌 Índice
-- [🤖 Inteligência Artificial](#inteligência-artificial)
-- [🧠 Inteligência Computacional](#inteligência-computacional)
-- [🌱 Computação Evolucionária](#computação-evolucionária)
-- [🔍 Reconhecimento de Padrões](#reconhecimento-de-padrões)
+- [🤖 Inteligência Artificial](#-inteligência-artificial)
+- [🧠 Inteligência Computacional](#-inteligência-computacional)
+- [🌱 Computação Evolucionária](#-computação-evolucionária)
+- [🔍 Reconhecimento de Padrões](#-reconhecimento-de-padrões)
 
 ---
 
