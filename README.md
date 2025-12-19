@@ -13,6 +13,7 @@
 
 ## Inteligência Artificial
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IA)
+
 Bem-vindo à seção **Inteligência Artificial**!
 Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raciocínio e aprendizado.
 
@@ -28,11 +29,13 @@ Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raci
 
 ## Inteligência Computacional
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IC)
+
  
 ---
 
 ## Computação Evolucionaria
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE)
+
 Bem-vindo ao repositório da matéria **Computação Evolucionária**!  
 Aqui você encontrará projetos realizados na disciplina, abordando algoritmos evolutivos e técnicas de otimização multiobjetivo.
 
@@ -49,6 +52,7 @@ Aqui você encontrará projetos realizados na disciplina, abordando algoritmos e
 
 ## Reconhecimento de Padrões
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/RR)
+
 Bem-vindo ao repositório da matéria **Reconhecimento de Padrões**!
 Aqui você encontrará projetos que exploram técnicas de aprendizado de máquina aplicadas à identificação e classificação de padrões em dados.
 
