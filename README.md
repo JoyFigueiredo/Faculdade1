@@ -1,43 +1,47 @@
-﻿﻿Olá,
-> Venho compartilhar meu conhecimento, de forma a também deixar de fácil acesso Trabalhos desenvolvidos durante a Faculdade.
 
-# Faculdade Engenharia de Computação
+# 🎓 Faculdade Engenharia de Computação
 
-## 📌 Índice
--  [Inteligencia Artificial](#inteligencia-artificial)
--  [Inteligência Computacional](#inteligência-computacional)
--  [Computação Evolucionaria](#computação-evolucionaria)
--  [Reconhecimento de Padrões](#reconhecimento-de-padrões)
+Olá!  
+> Venho compartilhar meu conhecimento e deixar de fácil acesso os **trabalhos desenvolvidos durante a faculdade**.
 
 ---
 
-## Inteligência Artificial
+## 📌 Índice
+- [🤖 Inteligência Artificial](#inteligência-artificial)
+- #inteligência-computacional
+- [🌱 Computação Evolucionária](#computação-evolucionária)
+- [🔍 Reconhecimento de Padrões](#reconhecimento-de-padrões)
+
+---
+
+## 🤖 Inteligência Artificial
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IA)
 
-Bem-vindo à seção **Inteligência Artificial**!
+Bem-vindo à seção **Inteligência Artificial**!  
 Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raciocínio e aprendizado.
 
 ### Trabalhos
 - **Trabalho 1:** Dixon  
   Implementação do método de Dixon para resolução de sistemas lineares.
-- **Trabalho 2:** nRainhas  
+- **Trabalho 2:** n-Rainhas  
   Algoritmo para resolver o problema das n-rainhas utilizando busca heurística.
 - **Trabalho 3:** Perceptron  
   Implementação do modelo Perceptron para classificação linear.
-  
+
 ---
 
-## Inteligência Computacional
+## 🧠 Inteligência Computacional
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IC)
 
- 
+*(Adicionar descrição e trabalhos aqui)*
+
 ---
 
-## Computação Evolucionaria
+## 🌱 Computação Evolucionária
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE)
 
-Bem-vindo ao repositório da matéria **Computação Evolucionária**!  
-Aqui você encontrará projetos realizados na disciplina, abordando algoritmos evolutivos e técnicas de otimização multiobjetivo.
+Bem-vindo à seção **Computação Evolucionária**!  
+Aqui você encontrará projetos que abordam algoritmos evolutivos e técnicas de otimização multiobjetivo.
 
 ### Trabalhos
 - **Trabalho 1:** Fast Non-Dominated Sort  
@@ -50,12 +54,13 @@ Aqui você encontrará projetos realizados na disciplina, abordando algoritmos e
 
 ---
 
-## Reconhecimento de Padrões
-📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/RR)
+## 🔍 Reconhecimento de Padrões
+📌 **Repositório:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/RR
 
-Bem-vindo ao repositório da matéria **Reconhecimento de Padrões**!
+Bem-vindo à seção **Reconhecimento de Padrões**!  
 Aqui você encontrará projetos que exploram técnicas de aprendizado de máquina aplicadas à identificação e classificação de padrões em dados.
 
+### Trabalhos
 - **Trabalho 1:** Classificadores Bayesianos  
   Uso de estimadores de densidade (Gaussiano e KDE) e Naive Bayes para prever classes.
 - **Trabalho 2:** K-Nearest Neighbors (KNN)  
@@ -64,3 +69,9 @@ Aqui você encontrará projetos que exploram técnicas de aprendizado de máquin
   Algoritmos de agrupamento não supervisionado para identificar grupos e padrões ocultos nos dados.
 
 ---
+
+## 📫 Contato
+👩‍💻 **Autora:** [Joice Barros de Figueiredo](https://github.com/JoyFigueiredo)
+
+⭐ Se este repositório te ajudou, não esqueça de dar uma estrela no GitHub!
+``
