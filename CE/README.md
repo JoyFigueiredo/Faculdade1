@@ -6,11 +6,13 @@ Aqui você encontrará projetos realizados durante a disciplina, abordando algor
 
 ---
 
+
 ## 📌 Índice
-- [🧩 Trabalho 1 – Fast Non-Dominated Sort](#trabalho-1)
-- #trabalho-2
-- [⚡ Trabalho 3 – NSGA-II](#trabalho-3)
+- [🧩 Trabalho 1 – Fast Non-Dominated Sort](#trabalho-1--fast-non-dominated-sort)
+- [🌐 Trabalho 2 – Crowding Distance](#trabalho-2--crowding-distance)
+- [⚡ Trabalho 3 – NSGA-II](#trabalho-3--nsga-ii)
 - [📚 Trabalho 4](#trabalho-4)
+
 
 ---
 
@@ -49,3 +51,4 @@ Se você tiver alguma dúvida ou sugestão, entre em contato!
 ---
 
 ⭐ **Dica:** Se este repositório te ajudou, não esqueça de dar uma estrela
+
