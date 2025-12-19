@@ -33,7 +33,20 @@ Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raci
 ## 🧠 Inteligência Computacional
 📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IC)
 
-*(Adicionar descrição e trabalhos aqui)*
+Bem-vindo à seção **Inteligência Computacional**!  
+Aqui você encontrará projetos relacionados a redes neurais e classificadores aplicados a problemas práticos.
+
+### Trabalhos
+- **Trabalho 1:** Base de dados triviais  
+  Implementação inicial para testar redes neurais em bases simples.
+- **Trabalho 2:** MLP para Bases Individuais  
+  Aplicação do Perceptron Multicamadas (MLP) na base individual de cada aluno.
+- **Trabalho 3:** MLP com Treino e Teste  
+  Reimplementação do trabalho anterior com divisão da base em treino e teste.
+- **Trabalho 4:** MLP com Estratégias  
+  Inclusão de estratégias como saída deslocada, erro ao quadrado, normalização e ajuste da camada intermediária.
+- **Trabalho 5:** Classificador Bayesiano  
+  Aplicação do classificador Bayesiano sobre a base individual.
 
 ---
 
