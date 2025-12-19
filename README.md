@@ -8,19 +8,26 @@
 -  [Inteligência Computacional](#inteligência-computacional)
 -  [Computação Evolucionaria](#computação-evolucionaria)
 -  [Reconhecimento de Padrões](#reconhecimento-de-padrões)
--  []()
--  []()
 
 ---
 
 ## Inteligência Artificial
-*(Adicionar descrição e trabalhos aqui)*
+Bem-vindo à seção **Inteligência Artificial**!
+Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raciocínio e aprendizado.
 
+### Trabalhos
+- **Trabalho 1:** Dixon  
+  Implementação do método de Dixon para resolução de sistemas lineares.
+- **Trabalho 2:** nRainhas  
+  Algoritmo para resolver o problema das n-rainhas utilizando busca heurística.
+- **Trabalho 3:** Perceptron  
+  Implementação do modelo Perceptron para classificação linear.
+  
 ---
 
 ## Inteligência Computacional
-*(Adicionar descrição e trabalhos aqui)*
 
+ 
 ---
 
 ## Computação Evolucionaria
@@ -40,6 +47,14 @@ Aqui você encontrará projetos realizados na disciplina, abordando algoritmos e
 ---
 
 ## Reconhecimento de Padrões
-*(*(Adicionar descrição e trabalhos aqui)*
+Bem-vindo ao repositório da matéria **Reconhecimento de Padrões**!
+Aqui você encontrará projetos que exploram técnicas de aprendizado de máquina aplicadas à identificação e classificação de padrões em dados.
+
+- **Trabalho 1:** Classificadores Bayesianos  
+  Uso de estimadores de densidade (Gaussiano e KDE) e Naive Bayes para prever classes.
+- **Trabalho 2:** K-Nearest Neighbors (KNN)  
+  Comparação de diferentes métricas de distância (Euclidiana, Manhattan, Minkowski e Chebyshev).
+- **Trabalho 3:** K-Means e K-Medoids  
+  Algoritmos de agrupamento não supervisionado para identificar grupos e padrões ocultos nos dados.
 
 ---
