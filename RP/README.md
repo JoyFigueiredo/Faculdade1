@@ -27,146 +27,54 @@ O foco é **conceitual**, servindo como material de apoio e portfólio acadêmic
 
 ---
 
-## 📊 Estimadores de Densidade Probabilística
+## 📌 Métodos Estudados
 
-Estimadores de densidade são utilizados para modelar a distribuição dos atributos em cada classe,
-permitindo o cálculo da probabilidade de ocorrência de um determinado valor.
+### 🔹 Estimador Probabilístico
 
----
+O **Estimador Probabilístico** é baseado em conceitos de **probabilidade e estatística**.
+Ele utiliza a distribuição dos dados para estimar a chance de uma amostra pertencer a
+determinada classe, considerando o comportamento observado no conjunto de dados.
 
-### 🔹 Estimador Gaussiano
-
-O **Estimador Gaussiano** assume que os dados seguem uma **distribuição normal**.
-Para cada atributo de cada classe, são calculados a **média** e o **desvio padrão**,
-utilizados na função densidade da normal:
-
-\[
-f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}}
-\]
-
-Onde:
-
-- `x` = valor da amostra
-- `μ` = média
-- `σ` = desvio padrão
-
-✔️ Simples e eficiente  
-❌ Dependente da suposição de normalidade
+Esse tipo de abordagem é amplamente utilizado em classificadores Bayesianos e ajuda a
+entender a relação entre dados, classes e incerteza.
 
 ---
 
-### 🔹 Kernel Density Estimation (KDE)
+### 🔹 K-Medoids
 
-O **KDE** é um estimador **não paramétrico**, que não assume uma forma fixa para a distribuição dos dados.
-A densidade é construída a partir da soma de **kernels** centrados em cada amostra:
+O **K-Medoids** é um método de **agrupamento (clustering)** que busca dividir os dados em
+grupos com base na similaridade entre as amostras.
 
-\[
-\hat{f}(x) = \frac{1}{n h} \sum\_{i=1}^{n} K\left(\frac{x - x_i}{h}\right)
-\]
-
-Para o **kernel Gaussiano**:
-
-\[
-K(u) = \frac{1}{\sqrt{2\pi}} e^{-\frac{u^2}{2}}
-\]
-
-Resultando em:
-
-\[
-\hat{f}(x) = \frac{1}{n h \sqrt{2\pi}} \sum\_{i=1}^{n} e^{-\frac{1}{2}\left(\frac{x - x_i}{h}\right)^2}
-\]
-
-Onde:
-
-- `n` = número de amostras
-- `h` = largura de banda (_bandwidth_)
-- `xᵢ` = amostras do conjunto de treino
-
-✔️ Modela distribuições complexas  
-❌ Custo computacional maior e dependente de `h`
+Diferente de outros métodos de agrupamento, ele escolhe representantes reais do conjunto
+de dados como centros dos grupos, tornando-se mais robusto a ruídos e valores extremos.
 
 ---
 
-## 📌 Classificador Bayesiano
+### 🔹 K-Nearest Neighbors (KNN)
 
-O **Classificador Bayesiano** utiliza o **Teorema de Bayes** para estimar a probabilidade de uma amostra
-pertencer a uma determinada classe, a partir de seus atributos.
+O **KNN** é um algoritmo de **classificação baseado em proximidade**.
+Ele classifica uma nova amostra analisando as classes das amostras mais próximas,
+considerando uma medida de distância.
 
----
-
-### 📍 Teorema de Bayes
-
-\[
-P(C|X) = \frac{P(X|C) \cdot P(C)}{P(X)}
-\]
-
-- `P(C)` → Probabilidade a priori da classe
-- `P(X|C)` → Probabilidade da amostra dado a classe
-- `P(X)` → Fator de normalização
+É um método simples e intuitivo, muito utilizado para introduzir conceitos de
+classificação supervisionada e similaridade entre dados.
 
 ---
 
-### ⚙️ Naive Bayes
+## 🧠 Aplicação na Disciplina
 
-O **Naive Bayes** assume independência entre os atributos:
+Os métodos apresentados neste repositório permitem:
 
-\[
-P(X|C) = \prod\_{i=1}^{n} P(X_i | C)
-\]
-
-Assim:
-
-\[
-P(C|X) \propto P(C) \cdot \prod\_{i=1}^{n} P(X_i | C)
-\]
-
-📌 A classe atribuída é aquela que maximiza `P(C|X)`.
-
-✔️ Simples e eficiente  
-❌ Sensível à correlação entre atributos
+- Comparar diferentes abordagens de classificação e agrupamento.
+- Entender o impacto da escolha do método na análise de dados.
+- Relacionar teoria estatística com aplicações práticas em aprendizado de máquina.
 
 ---
 
-## 📊 Base de Dados Utilizada
+## 🛠️ Desenvolvimento
 
-A base **transfusion.data** contém informações sobre doadores de sangue
-e é utilizada para prever se um doador realizará uma nova doação em determinado período.
-
-- **Total de registros:** 748
-- **Número de atributos:** 5
-
-| Atributo      | Descrição                               |
-| ------------- | --------------------------------------- |
-| Recency (R)   | Meses desde a última doação             |
-| Frequency (F) | Total de doações realizadas             |
-| Monetary (M)  | Volume total doado (c.c.)               |
-| Time (T)      | Meses desde a primeira doação           |
-| Class         | Doação em março/2007 (1 = sim, 0 = não) |
-
-⚠️ As classes são **desbalanceadas**, com maioria de exemplos negativos.
+- Repositório desenvolvido exclusivamente para fins acadêmicos.
+- Conteúdo organizado para facilitar o estudo e revisão dos temas abordados em aula.
+- Pode ser expandido com novos algoritmos e experimentos ao longo da disciplina.
 
 ---
-
-## 🧠 Exemplos de Implementação
-
-- **Estimador Gaussiano** — abordagem paramétrica
-- **KDE** — abordagem não paramétrica
-- **Naive Bayes** — combinação probabilística dos estimadores
-
----
-
-## 💻 Requisitos
-
-- **Java JDK 17+**
-- **Swing** (seleção de arquivos)
-- Arquivos `.data` de treino e teste
-
----
-
-## ▶️ Uso
-
-1. Compile o projeto:
-
-```bash
-javac *.java
-```
