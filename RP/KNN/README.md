@@ -1,45 +1,42 @@
-# 📏 Comparando Métricas de Distância  
-## utilizando o classificador KNN  
+<h1 align="center">Comparação de Métricas de Distância no KNN</h1>
 
-> Este repositório tem como objetivo **analisar e comparar diferentes métricas de distância** aplicadas ao **classificador K-Nearest Neighbors (KNN)**.  
-> O projeto faz parte do estudo de **Reconhecimento de Padrões**, dentro da área de **Aprendizado de Máquina e Inteligência Artificial**.  
+<p align="center">
+Este repositório tem como objetivo <strong>analisar e comparar diferentes métricas de distância</strong> aplicadas ao classificador  
+<strong>K-Nearest Neighbors (KNN)</strong>.  
+Projeto acadêmico voltado para <strong>Reconhecimento de Padrões</strong>, explorando o impacto das métricas
+no desempenho do classificador.
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/status-concluído-brightgreen" alt="Status">
+  <img src="https://img.shields.io/badge/linguagem-Java-blue" alt="Linguagem">
+  <img src="https://img.shields.io/badge/classificador-KNN-orange" alt="KNN">
+</p>
 
-## 📌 Índice
-- [� Comparando Métricas de Distância](#-comparando-métricas-de-distância)
-  - [utilizando o classificador KNN](#utilizando-o-classificador-knn)
-  - [📌 Índice](#-índice)
-  - [📘 Descrição](#-descrição)
-  - [⚙️ O Algoritmo KNN](#️-o-algoritmo-knn)
-  - [📏 Métricas de Distância Comparadas](#-métricas-de-distância-comparadas)
-    - [🔹 Distância Euclidiana](#-distância-euclidiana)
-    - [🔹 Distância Manhattan](#-distância-manhattan)
-    - [🔹 Distância de Minkowski](#-distância-de-minkowski)
-    - [🔹 Distância de Chebyshev](#-distância-de-chebyshev)
-  - [📊 Base de Dados Utilizada](#-base-de-dados-utilizada)
-  - [🧠 Etapas do Experimento](#-etapas-do-experimento)
-  - [📈 Resultados Esperados](#-resultados-esperados)
-  - [💻 Requisitos](#-requisitos)
-  - [🚀 Uso](#-uso)
+> **Área:** Aprendizado de Máquina / Inteligência Artificial  
+> **Algoritmo:** K-Nearest Neighbors (KNN)  
+> **Foco:** Comparação de métricas de distância
 
 ---
 
 ## 📘 Descrição
 
-O **K-Nearest Neighbors (KNN)** é um classificador baseado em **instâncias**, ou seja, não constrói um modelo explícito.  
-A classificação de uma nova amostra é feita com base nas **K amostras mais próximas** no conjunto de treino, de acordo com uma **métrica de distância**.
+O **K-Nearest Neighbors (KNN)** é um classificador baseado em instâncias, que não realiza treinamento explícito.
+A classificação de uma nova amostra ocorre a partir da análise das **K amostras mais próximas** no conjunto de treino,
+de acordo com uma **métrica de distância**.
 
-O objetivo deste projeto é **comparar o impacto das diferentes métricas de distância** no desempenho do KNN.
+Este projeto tem como objetivo **comparar o impacto de diferentes métricas de distância**
+no desempenho do KNN, avaliando acurácia, comportamento próximo à fronteira de decisão
+e sensibilidade ao valor de **K**.
 
 ---
 
-## ⚙️ O Algoritmo KNN
+## ⚙️ O Algoritmo KNN (visão geral)
 
-1️⃣ Calcular a distância da amostra de teste para **todas as amostras de treino**.  
-2️⃣ Selecionar as **K amostras mais próximas**.  
-3️⃣ Realizar uma **votação majoritária** entre as classes dessas K amostras.  
-4️⃣ Classificar a amostra com a classe mais votada.
+1. Calcula a distância entre a amostra de teste e todas as amostras de treino.
+2. Seleciona os **K vizinhos mais próximos**.
+3. Realiza uma **votação majoritária** entre as classes.
+4. Atribui à amostra a classe mais frequente.
 
 ---
 
@@ -50,9 +47,9 @@ Abaixo estão as principais utilizadas neste estudo.
 
 ---
 
-### 🔹 Distância Euclidiana  
+### 🔹 Distância Euclidiana
 
-A métrica mais comum, mede a distância "reta" entre dois pontos:  
+A métrica mais comum, mede a distância "reta" entre dois pontos:
 
 $$
 d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
@@ -63,9 +60,9 @@ $$
 
 ---
 
-### 🔹 Distância Manhattan  
+### 🔹 Distância Manhattan
 
-Baseia-se na soma das diferenças absolutas:  
+Baseia-se na soma das diferenças absolutas:
 
 $$
 d(x, y) = \sum_{i=1}^{n} |x_i - y_i|
@@ -76,25 +73,25 @@ $$
 
 ---
 
-### 🔹 Distância de Minkowski  
+### 🔹 Distância de Minkowski
 
-Generaliza as anteriores, controlada por um parâmetro \( p \):  
+Generaliza as anteriores, controlada por um parâmetro \( p \):
 
 $$
 d(x, y) = \left( \sum_{i=1}^{n} |x_i - y_i|^p \right)^{1/p}
 $$
 
-- \( p = 1 \) → Manhattan  
-- \( p = 2 \) → Euclidiana  
+- \( p = 1 \) → Manhattan
+- \( p = 2 \) → Euclidiana
 
 ✔️ Permite ajustar a sensibilidade da métrica.  
 ❌ Requer escolha adequada do parâmetro \( p \).
 
 ---
 
-### 🔹 Distância de Chebyshev  
+### 🔹 Distância de Chebyshev
 
-Considera apenas a **maior diferença** entre os atributos:  
+Considera apenas a **maior diferença** entre os atributos:
 
 $$
 d(x, y) = \max_i |x_i - y_i|
@@ -105,50 +102,66 @@ $$
 
 ---
 
-## 📊 Base de Dados Utilizada  
+## 📊 Base de Dados Utilizada
 
-A base utilizada é a **transfusion.data**, contendo informações sobre doadores de sangue.  
-Ela é a mesma usada no estudo de **classificadores bayesianos**, para manter a consistência entre os experimentos.
+Foi utilizada a base **transfusion.data**, relacionada a doadores de sangue,
+a mesma empregada em experimentos anteriores com **classificadores bayesianos**,
+garantindo consistência experimental.
 
-| Atributo    | Descrição                                                                                  |
-|-------------|--------------------------------------------------------------------------------------------|
-| **Recency (R)**   | Número de meses desde a última doação.                                                |
-| **Frequency (F)** | Número total de doações realizadas.                                                   |
-| **Monetary (M)**  | Volume total de sangue doado (c.c.).                                                 |
-| **Time (T)**      | Meses desde a primeira doação.                                                       |
-| **Class**         | Se o doador fez nova doação em março/2007 (1 = sim, 0 = não).                        |
-
----
-
-## 🧠 Etapas do Experimento  
-
-1️⃣ Normalização dos atributos (para evitar influência de escala).  
-2️⃣ Escolha de **K** (número de vizinhos).  
-3️⃣ Aplicação das **métricas de distância** (Euclidiana, Manhattan, Minkowski e Chebyshev).  
-4️⃣ Avaliação da **taxa de acerto** e **matriz de confusão**.  
-5️⃣ Comparação dos resultados entre as métricas.
+| Atributo      | Descrição                               |
+| ------------- | --------------------------------------- |
+| Recency (R)   | Meses desde a última doação             |
+| Frequency (F) | Número total de doações                 |
+| Monetary (M)  | Volume total de sangue doado            |
+| Time (T)      | Meses desde a primeira doação           |
+| Class         | Doação em março/2007 (1 = sim, 0 = não) |
 
 ---
 
-## 📈 Resultados Esperados  
+## 🧠 Etapas do Experimento
 
-A comparação busca observar:  
-- Variação na **acurácia** conforme a métrica.  
-- Diferenças no comportamento do classificador para dados próximos da fronteira de decisão.  
+1. Normalização dos atributos.
+2. Definição do valor de **K**.
+3. Aplicação das métricas de distância.
+4. Avaliação por **taxa de acerto** e **matriz de confusão**.
+5. Comparação dos resultados obtidos.
+
+---
+
+## 📈 Resultados Esperados
+
+A comparação busca observar:
+
+- Variação na **acurácia** conforme a métrica.
+- Diferenças no comportamento do classificador para dados próximos da fronteira de decisão.
 - Impacto do **valor de K** no desempenho.
 
 ---
 
-## 💻 Requisitos  
+## 🗂️ Estrutura do Projeto
 
-✔ **Java JDK 17+**  
-✔ **Biblioteca Swing (para seleção de arquivos)**  
-✔ **Arquivos `.data` de treino e teste**  
+```
+KNN-Metricas/
+├─ dados/ # Bases de treino e teste (.data)
+├─ src/ # Código-fonte Java
+├─ README.md # Documentação do projeto
+└─ \*.java # Classes do classificador
+```
 
 ---
 
-## 🚀 Uso  
+## 💻 Requisitos
 
-1️⃣ Compile o projeto:  
+✔ **Java JDK 17+**  
+✔ **Biblioteca Swing (para seleção de arquivos)**  
+✔ **Arquivos `.data` de treino e teste**
+
+---
+
+## 🚀 Uso
+
+1️⃣ Compile o projeto:
+
 ```bash
 javac *.java
+```
