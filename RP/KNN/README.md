@@ -138,18 +138,6 @@ A comparação busca observar:
 
 ---
 
-## 🗂️ Estrutura do Projeto
-
-```
-KNN-Metricas/
-├─ dados/ # Bases de treino e teste (.data)
-├─ src/ # Código-fonte Java
-├─ README.md # Documentação do projeto
-└─ \*.java # Classes do classificador
-```
-
----
-
 ## 💻 Requisitos
 
 ✔ **Java JDK 17+**  
