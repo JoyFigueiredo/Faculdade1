@@ -165,3 +165,27 @@ KNN-Metricas/
 ```bash
 javac *.java
 ```
+
+---
+
+## 🛠️ Desenvolvimento
+
+- Projeto desenvolvido para fins acadêmicos.
+- Código modular, permitindo fácil inclusão de novas métricas.
+- Estrutura compatível com ambientes educacionais e laboratoriais.
+
+---
+
+## ✅ Status do Projeto
+
+Concluído para a disciplina de **Reconhecimento de Padrões**, com possibilidade de  
+extensão para novos classificadores ou métricas adicionais.
+
+---
+
+## 🗺 Roadmap (possíveis melhorias)
+
+- [ ] Validação cruzada (k-fold)
+- [ ] Comparação com outros classificadores
+- [ ] Visualização gráfica das fronteiras de decisão
+- [ ] Automatização da escolha do melhor valor de K
