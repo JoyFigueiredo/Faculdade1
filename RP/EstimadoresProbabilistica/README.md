@@ -1,43 +1,50 @@
-Olá,
+<h1 align="center">📊 Estimadores de Probabilidade</h1>
 
-> Venho compartilhar meu conhecimento em **Reconhecimento de Padrões**, deixando exemplos, explicações e conceitos de fácil acesso.  
-> Este repositório funciona como um portfólio pessoal para organização e estudos na área de **aprendizado de máquina e inteligência artificial**.
+<p align="center">
+Repositório acadêmico dedicado ao estudo e implementação de  
+<strong>estimadores de densidade de probabilidade</strong>, utilizados como base
+para modelos estatísticos e classificadores probabilísticos.
+</p>
 
-# 🤖 Reconhecimento de Padrões
+<p align="center">
+  https://img.shields.io/badge/tema-Estimadores%20de%20Probabilidade-purple  
+  https://img.shields.io/badge/finalidade-acadêmica-blue  
+  https://img.shields.io/badge/linguagem-Java-orange  
+</p>
 
-## 📌 Índice
-
-- [🤖 Reconhecimento de Padrões](#-reconhecimento-de-padrões)
-  - [📌 Índice](#-índice)
-  - [📌 Descrição](#-descrição)
-    - [📊 Estimadores de Densidade Probabilística](#-estimadores-de-densidade-probabilística)
-      - [🔹 Estimador Gaussiano](#-estimador-gaussiano)
-      - [🔹 Kernel Density Estimation (KDE)](#-kernel-density-estimation-kde)
-    - [📌 Classificador Bayesiano](#-classificador-bayesiano)
-      - [📍 Teorema de Bayes](#-teorema-de-bayes)
-      - [⚙️ Naive Bayes](#️-naive-bayes)
-  - [📌 Estrutura da Base de Dados utilizada](#-estrutura-da-base-de-dados-utilizada)
-  - [📌 Exemplos de Implementação](#-exemplos-de-implementação)
-  - [📌 Requisitos](#-requisitos)
-  - [📌 Uso](#-uso)
+> **Disciplina:** Reconhecimento de Padrões  
+> **Tema específico:** Estimadores de Probabilidade  
+> **Finalidade:** Estudo, experimentação e portfólio acadêmico
 
 ---
 
 ## 📌 Descrição
 
-O projeto aborda conceitos fundamentais de **Reconhecimento de Padrões** utilizando **estimadores de densidade probabilística** e **classificadores Bayesianos**.  
-O objetivo é aplicar técnicas estatísticas para identificar a qual classe uma amostra pertence, com base em seu vetor de características.
+
+Este projeto tem como foco o estudo de **Estimadores de Probabilidade**, abordando
+técnicas paramétricas e não paramétricas para modelar a distribuição dos dados.
+
+Os estimadores implementados são utilizados para calcular a probabilidade de
+ocorrência de valores e para apoiar decisões em **modelos estatísticos
+probabilísticos**, como o classificador Bayesiano.
+
+O trabalho possui caráter **didático e conceitual**, sendo desenvolvido no
+contexto acadêmico da disciplina.
 
 ---
 
 ### 📊 Estimadores de Densidade Probabilística
 
-Um **estimador de densidade** é utilizado para calcular a probabilidade de um dado valor ocorrer, modelando a distribuição de atributos em cada classe.
+Estimadores de densidade são métodos estatísticos utilizados para **aproximar a
+função densidade de probabilidade** de uma variável aleatória a partir de um
+conjunto de amostras.
 
 #### 🔹 Estimador Gaussiano
 
-O **Estimador Gaussiano** assume que os dados seguem uma **distribuição normal**.  
-Ele utiliza **média** e **desvio padrão** para cada atributo de cada classe, aplicando a função de densidade da normal:
+O **Estimador Gaussiano** é um método **paramétrico**, que assume que os dados seguem
+uma **distribuição normal**.
+
+A densidade é calculada a partir da média e do desvio padrão:
 
 $$
 f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{-\frac{(x - \mu)^2}{2\sigma^2}}
@@ -56,8 +63,11 @@ Onde:
 
 #### 🔹 Kernel Density Estimation (KDE)
 
-O **KDE** é um estimador **não paramétrico**, que não assume forma prévia da distribuição.  
-Ele constrói a densidade a partir de **núcleos (kernels)** suavizados sobre cada ponto de treino:
+
+O **Kernel Density Estimation (KDE)** é um método **não paramétrico** que não assume
+uma forma prévia para a distribuição dos dados.
+
+A densidade é estimada pela soma das contribuições de cada ponto da amostra:
 
 $$
 \hat{f}(x) = \frac{1}{n h} \sum_{i=1}^{n} K\left(\frac{x - x_i}{h}\right)
@@ -89,9 +99,15 @@ Onde:
 
 ### 📌 Classificador Bayesiano
 
-Um **Classificador Bayesiano** estima a probabilidade de uma amostra pertencer a uma classe <code>C</code> a partir dos atributos <code>X</code>, aplicando o **Teorema de Bayes**.
+s estimadores de densidade são empregados como base para o cálculo da
+**verossimilhança** em classificadores probabilísticos, como o modelo Bayesiano.
+
+---
 
 #### 📍 Teorema de Bayes
+
+O **Teorema de Bayes** permite atualizar a probabilidade de uma classe `C` dado um
+conjunto de atributos `X`:
 
 $$
 P(C|X) = \frac{P(X|C) \cdot P(C)}{P(X)}
@@ -105,7 +121,7 @@ $$
 
 #### ⚙️ Naive Bayes
 
-O **Naive Bayes** é uma simplificação que assume independência entre os atributos:
+O modelo **Naive Bayes** assume independência estatística entre os atributos:
 
 $$
 P(X|C) = \prod_{i=1}^{n} P(X_i | C)
@@ -149,20 +165,3 @@ O conjunto de dados possui **748 registros** e **5 atributos**:
 🔹 **KDE** → estimativa não paramétrica (usa todos os pontos do treino).  
 🔹 **Naive Bayes** → classificador que combina os estimadores para prever a classe mais provável.
 
----
-
-## 📌 Requisitos
-
-✔ **Java JDK 17+**  
-✔ **Biblioteca Swing (para seleção de arquivos)**  
-✔ **Arquivos `.data` de treino e teste**
-
----
-
-## 📌 Uso
-
-1️⃣ Compile o projeto:
-
-```bash
-javac *.java
-```
