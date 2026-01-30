@@ -80,7 +80,7 @@ $$
 Onde:
 
 - `k` é o número de clusters  
-- ` $$ C_i $$ ` é o conjunto de pontos do cluster `i`  
+- `C_i` é o conjunto de pontos do cluster `i`  
 - `m_i` é o medoid do cluster  
 - `d(x, m_i)` é a distância entre o ponto e o medoid  
 
