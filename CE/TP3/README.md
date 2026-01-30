@@ -9,10 +9,10 @@ e manutenção da diversidade por meio da <strong>Crowding Distance</strong>.
 </p>
 
 <p align="center">
-  https://img.shields.io/badge/finalidade-acadêmica-blue
-  https://img.shields.io/badge/disciplina-Computação%20Evolucionária-green
-  https://img.shields.io/badge/tema-NSGA--II-purple
-  https://img.shields.io/badge/linguagem-Java-orange
+  <img src= "https://img.shields.io/badge/finalidade-acadêmica-blue">
+  <img src= "https://img.shields.io/badge/disciplina-Computação%20Evolucionária-green">
+  <img src= "https://img.shields.io/badge/tema-NSGA--II-purple">
+  <img src= "https://img.shields.io/badge/linguagem-Java-orange">
 </p>
 
 ---
@@ -96,3 +96,4 @@ O funcionamento do NSGA‑II pode ser resumido nas seguintes etapas:
 🔗 https://github.com/JoyFigueiredo
 
 Projeto desenvolvido exclusivamente para fins acadêmicos.
+
