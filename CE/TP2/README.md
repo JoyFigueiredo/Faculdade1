@@ -1,62 +1,87 @@
-# Trabalho 2
-Este código é um exemplo didático para ilustrar como funciona o algoritmo  e como ele pode ser implementado em Java.
 
-A Crowding Distance é um conceito utilizado em algoritmos de otimização multiobjetivo, como o Fast Non-Dominated Sort (FNDS), para medir a densidade de soluções em um espaço objetivo. Ela ajuda a manter a diversidade na população de soluções não dominadas ao calcular a distância média entre cada solução em relação às outras em termos de seus objetivos.
+<h1 align="center">🌱 Computação Evolucionária — Trabalho 2</h1>
 
-Este conceito é implementado para cada objetivo individualmente, onde cada solução recebe uma medida de distância com base na proximidade em seu objetivo específico. Soluções que estão mais isoladas no espaço objetivo têm uma maior distância de crowding, o que permite uma melhor distribuição de soluções ao longo das frentes de Pareto.
+<h2 align="center">Crowding Distance</h2>
 
-A Crowding Distance é fundamental para algoritmos que buscam equilibrar a exploração (manter soluções diversificadas) e a explotação (selecionar soluções de alta qualidade).
+<p align="center">
+Implementação didática do conceito de <strong>Crowding Distance</strong> em
+<strong>Java</strong>, utilizada para manutenção da diversidade em
+<strong>problemas de otimização multiobjetivo</strong>.
+</p>
 
-
-## Índice
-- [Descrição](#Descrição)
-- [Funcionamento](#Funcionamento)
-- [Aplicação](#Aplicação)
-- [Descrição das classes](#Descrição-das-classes)
-- [Contato](#contato)
-
-## Descrição
-A Crowding Distance desempenha um papel crucial na manutenção do equilíbrio entre explorar diferentes soluções (diversidade) e escolher as melhores soluções (qualidade) em problemas de otimização multiobjetivo.
-
-## Funcionamento
-- Ordenação por Objetivo: Inicialmente, as soluções são ordenadas com base nos seus objetivos individuais. Isso é feito para cada objetivo separadamente.
-- Cálculo da Distância: Para cada solução na população não dominada, a Crowding Distance é calculada. Ela representa a média da diferença entre os valores de objetivo das soluções adjacentes na ordenação.
-- Manutenção da Diversidade: Soluções que estão mais isoladas (ou seja, têm uma distância de crowding maior) são preferidas, pois contribuem para manter a diversidade da população. Isso ajuda a evitar a concentração excessiva de soluções em áreas específicas do espaço objetivo.
-
-## Aplicação
-- Algoritmos de Otimização Multiobjetivo: Utilizada em conjunção com métodos de ordenação não dominada, como o FNDS, para classificar e selecionar soluções em frentes de Pareto.
-- Seleção de Soluções: Facilita a escolha de soluções não dominadas que não apenas são eficazes em termos de objetivos, mas também estão bem distribuídas ao longo do espaço objetivo.
-
-## Descrição das classes 
-
-### `Individuo`
-- Representa um indivíduo na população de soluções.
-- Armazena os valores das variáveis de decisão (vars) e dos objetivos (objetivos).
-- Mantém uma lista de indivíduos que ele domina (dominados), o número de soluções que o dominam (n), e o ranking (r). 
-
-### `FNDS`
-- Implementa o algoritmo Fast Non-Dominated Sort (FNDS) para otimização multiobjetivo.
-- O método execute recebe uma lista de indivíduos e retorna uma lista de frentes de Pareto.
-- A primeira parte do algoritmo identifica e forma a primeira frente de Pareto, baseada na dominância de Pareto.
-- A segunda parte do algoritmo forma as demais frentes de Pareto, iterativamente, removendo soluções das frentes anteriores e atualizando as contagens de dominância.
-
-### `CrowdingDistance`
-- Calcula a distância de crowding para cada indivíduo em uma lista de indivíduos não dominados.
-- A distância de crowding ajuda a manter a diversidade ao longo das frentes de Pareto, avaliando quão densamente os indivíduos estão distribuídos no espaço objetivo.
-
-### `Ponto`
-- Representa um ponto no espaço objetivo associado a um indivíduo.
-- Mantém os objetivos do ponto, uma lista de pontos dominados, a contagem de dominância (n), e o ranking (rank).
-
-### `Main`
-- Demonstração da utilização do algoritmo FNDS para classificar uma população em frentes de Pareto.
-- Cria uma população de indivíduos com variáveis de decisão e objetivos específicos.
-- Executa o algoritmo FNDS para gerar e imprimir as frentes de Pareto resultantes da população.
-
-## Contato
-
-Se você tiver alguma dúvida ou sugestão, entre em contato!
+<p align="center">
+  <img src="https://img.shields.io/badge/finalidade-acadêmica-blue">
+  <img src="https://img.shields.io/badge/disciplina-Computação%20Evolucionária-green">
+  <img src="https://img.shields.io/badge/tema-Crowding%20Distance-purple">
+  <img src="https://img.shields.io/badge/linguagem-Java-orange">
+</p>
 
 ---
 
-*Este projeto foi criado por [Joice Barros de Figueiredo](https://github.com/JoyFigueiredo).*
+## 📘 Descrição
+
+Este trabalho apresenta a implementação do conceito de **Crowding Distance**,
+utilizado em algoritmos de **otimização multiobjetivo** para medir a densidade
+de soluções em um espaço objetivo.
+
+A Crowding Distance é amplamente empregada em conjunto com métodos de ordenação
+não dominada, como o **Fast Non‑Dominated Sort (FNDS)**, sendo um componente
+fundamental do algoritmo **NSGA‑II**. Seu principal objetivo é **manter a diversidade**
+entre as soluções não dominadas ao longo das frentes de Pareto.
+
+---
+
+
+## 🧠 Conceitos Fundamentais
+
+A **Crowding Distance** avalia o quão isolada uma solução está em relação às demais
+no espaço objetivo. Soluções localizadas em regiões menos densas recebem valores
+mais altos de distância, tornando‑se preferenciais durante o processo de seleção.
+
+Esse mecanismo permite equilibrar:
+
+- **Exploração:** manutenção de soluções diversificadas  
+- **Exploração:** seleção de soluções com melhor qualidade  
+
+---
+
+## ⚙️ Funcionamento do Algoritmo
+
+O cálculo da Crowding Distance segue as etapas abaixo:
+
+1. **Ordenação por objetivo**  
+   Para cada objetivo, as soluções não dominadas são ordenadas em ordem crescente.
+
+2. **Atribuição de valores extremos**  
+   As soluções com menor e maior valor em cada objetivo recebem distância infinita,
+   garantindo sua preservação.
+
+3. **Cálculo da distância**  
+   Para cada solução intermediária, calcula‑se a diferença normalizada entre os
+   valores do objetivo das soluções vizinhas.
+
+4. **Soma das contribuições**  
+   A distância final de cada indivíduo é a soma das contribuições de todos os objetivos.
+
+Soluções com **maior Crowding Distance** são consideradas mais relevantes para manter
+a diversidade da população.
+
+---
+
+## 🎯 Objetivo do Trabalho
+
+- Compreender o conceito de **Crowding Distance**;
+- Relacionar diversidade e otimização multiobjetivo;
+- Implementar a métrica em Java;
+- Preparar base conceitual para algoritmos como o **NSGA‑II**.
+
+---
+
+## 📫 Autoria
+
+👩‍💻 **Joice Barros de Figueiredo**  
+🔗 https://github.com/JoyFigueiredo
+
+Projeto desenvolvido exclusivamente para fins acadêmicos.
+
+
