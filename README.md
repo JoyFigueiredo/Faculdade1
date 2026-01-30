@@ -15,13 +15,9 @@ Organizado por disciplinas, com foco em estudo, prática e registro da trajetór
   <img src= "https://img.shields.io/badge/curso-Engenharia%20de%20Computação-purple">  
 </p>
 
----
-
-## 📌 Índice
-- [🤖 Inteligência Artificial](#-inteligência-artificial)
-- [🧠 Inteligência Computacional](#-inteligência-computacional)
-- [🌱 Computação Evolucionária](#-computação-evolucionária)
-- [🔍 Reconhecimento de Padrões](#-reconhecimento-de-padrões)
+<p align="center">
+  <em>Todas as disciplinas listadas abaixo foram ministradas pelo Prof. <strong>Douglas</strong>.</em>
+</p>
 
 ---
 
@@ -88,25 +84,29 @@ em **redes neurais artificiais** e métodos de classificação.
 
 ## 🌱 Computação Evolucionária
 
-📌 **Pasta da disciplina:**  
+📂 **Pasta da disciplina:**  
 ➡️ https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE
 
-Esta seção reúne trabalhos relacionados a **algoritmos evolutivos** e
-**otimização multiobjetivo**.
+Esta seção reúne trabalhos relacionados a <strong>algoritmos evolutivos</strong> e
+<strong>otimização multiobjetivo</strong>.
 
 ### Trabalhos desenvolvidos
 
-- **Trabalho 1 – Fast Non‑Dominated Sort**  
-  Implementação do algoritmo de ordenação por dominância de Pareto.
+- **Trabalho 1 – Fast Non‑Dominated Sort (FNDS)**  
+  Implementação do algoritmo de ordenação por dominância de Pareto.  
+  📄 https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP1
 
 - **Trabalho 2 – Crowding Distance**  
-  Implementação da métrica de distância para manutenção da diversidade das soluções.
+  Implementação da métrica de distância para manutenção da diversidade das soluções.  
+  📄 https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP2
 
 - **Trabalho 3 – NSGA‑II**  
-  Algoritmo evolutivo multiobjetivo amplamente utilizado na literatura.
+  Integração de FNDS e Crowding Distance em um algoritmo evolutivo multiobjetivo.  
+  📄 https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP3
 
-- **Trabalho 4**  
-  *(Em desenvolvimento / a ser documentado)*
+- **Trabalho 4 – Aplicação do NSGA‑II**  
+  Aplicação do NSGA‑II em problema multiobjetivo com análise experimental.  
+  📄 https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP4
 
 ---
 
