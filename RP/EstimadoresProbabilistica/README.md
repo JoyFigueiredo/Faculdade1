@@ -7,9 +7,9 @@ para modelos estatísticos e classificadores probabilísticos.
 </p>
 
 <p align="center">
-  https://img.shields.io/badge/tema-Estimadores%20de%20Probabilidade-purple  
-  https://img.shields.io/badge/finalidade-acadêmica-blue  
-  https://img.shields.io/badge/linguagem-Java-orange  
+  <img src= "https://img.shields.io/badge/tema-Estimadores%20de%20Probabilidade-purple">  
+  <img src= "https://img.shields.io/badge/finalidade-acadêmica-blue">  
+  <img src= "https://img.shields.io/badge/linguagem-Java-orange">  
 </p>
 
 > **Disciplina:** Reconhecimento de Padrões  
