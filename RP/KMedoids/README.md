@@ -8,9 +8,9 @@ baseado em similaridade entre amostras.
 </p>
 
 <p align="center">
-  <img scr= "https://img.shields.io/badge/técnica-K--Medoids-purple">  
-  <img scr= "https://img.shields.io/badge/tipo-Agrupamento%20(CLustering)-blue">  
-  <img scr= "https://img.shields.io/badge/linguagem-Java-orange">  
+  <img src= "https://img.shields.io/badge/técnica-K--Medoids-purple">  
+  <img src= "https://img.shields.io/badge/tipo-Agrupamento%20(CLustering)-blue">  
+  <img src= "https://img.shields.io/badge/linguagem-Java-orange">  
 </p>
 
 > **Disciplina:** Reconhecimento de Padrões  
