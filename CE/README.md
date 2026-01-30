@@ -1,54 +1,48 @@
+<h1 align="center">🌱 Trabalhos de Computação Evolucionária</h1>
 
-# 🌱 Trabalhos de Computação Evolucionária
+<p align="center">
+Repositório da disciplina de <strong>Computação Evolucionária</strong>, reunindo implementações e experimentos
+em <strong>otimização multiobjetivo</strong> com foco na formação de frentes de Pareto e manutenção da diversidade.
+</p>
 
-Bem-vindo ao repositório da matéria **Computação Evolucionária**!  
-Aqui você encontrará projetos realizados durante a disciplina, abordando algoritmos evolutivos e técnicas de otimização multiobjetivo.
-
----
-
-
-## 📌 Índice
-- [🧩 Trabalho 1 – Fast Non-Dominated Sort](#trabalho-1--fast-non-dominated-sort)
-- [🌐 Trabalho 2 – Crowding Distance](#trabalho-2--crowding-distance)
-- [⚡ Trabalho 3 – NSGA-II](#trabalho-3--nsga-ii)
-- [📚 Trabalho 4](#trabalho-4)
-
+<p align="center">
+  <img src="https://img.shields.io/badge/finalidade-acadêmica-blue">
+  <img src="https://img.shields.io/badge/disciplina-Computação%20Evolucionária-green">
+  <img src="https://img.shields.io/badge/tema-Otimização%20Multiobjetivo-purple">
+  <img src="https://img.shields.io/badge/linguagem-Java-orange">
+</p>
 
 ---
 
-## 🧩 Trabalho 1 – Fast Non-Dominated Sort
-O **Fast Non-Dominated Sort (FNDS)** é um componente essencial nos algoritmos de otimização multiobjetivo, como o **NSGA-II**.  
-Ele organiza uma população de soluções em **frentes de Pareto**, onde cada frente representa um nível de dominância.
+## 🧩 Trabalho 1 — Fast Non‑Dominated Sort (FNDS)
+**Objetivo:** ordenar a população em **frentes de Pareto** (F1, F2, …) a partir da **dominância de Pareto**, criando a base para seleção em algoritmos multiobjetivo.  
+📂 **Código e README:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP1
 
 ---
 
-## 🌐 Trabalho 2 – Crowding Distance
-A **Crowding Distance** é uma métrica utilizada em algoritmos de otimização multiobjetivo para **preservar a diversidade** das soluções dentro da população.  
-Ela garante que as soluções sejam distribuídas uniformemente ao longo da **fronteira de Pareto**.
+## 🌐 Trabalho 2 — Crowding Distance
+**Objetivo:** calcular a **distância de crowding** para preservar a **diversidade** dentro de cada frente, favorecendo soluções mais isoladas no espaço objetivo.  
+📂 **Código e README:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP2
 
 ---
 
-## ⚡ Trabalho 3 – NSGA-II
-O **NSGA-II (Non-dominated Sorting Genetic Algorithm II)** é um algoritmo evolutivo projetado para resolver problemas de otimização multiobjetivo.  
-Ele combina:
-- **Classificação por frentes de Pareto** (FNDS)
-- **Crowding Distance** para diversidade
-- Operadores genéticos (seleção, cruzamento e mutação)
-
-O resultado é uma **fronteira de Pareto** que representa o melhor trade-off entre os objetivos.
+## ⚡ Trabalho 3 — NSGA‑II
+**Objetivo:** integrar **FNDS** e **Crowding Distance** em um **algoritmo evolutivo multiobjetivo completo**, com seleção, crossover e mutação, gerando uma **fronteira de Pareto** bem distribuída.  
+📂 **Código e README:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP3
 
 ---
 
-## 📚 Trabalho 4
-*(Adicionar descrição aqui)*
+## 📚 Trabalho 4 — Aplicação do NSGA‑II
+**Objetivo:** aplicar o **NSGA‑II** a um problema multiobjetivo, realizar **análises experimentais** (parâmetros, gerações, população, taxas) e avaliar a qualidade e diversidade da **fronteira de Pareto** obtida.  
+📂 **Código e README:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE/TP4
 
 ---
 
-## 📫 Contato
-Se você tiver alguma dúvida ou sugestão, entre em contato!  
-👩‍💻 **Autora:** [Joice Barros de Figueiredo](https://github.com/JoyFigueiredo)
+## 📫 Autoria
 
----
+👩‍💻 **Joice Barros de Figueiredo**  
+🔗 https://github.com/JoyFigueiredo
 
-⭐ **Dica:** Se este repositório te ajudou, não esqueça de dar uma estrela
-
+<p align="center">
+  Projeto desenvolvido exclusivamente para fins acadêmicos. Se este repositório te ajudou, considere ⭐ dar uma estrela.
+</p>
