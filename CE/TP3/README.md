@@ -1,74 +1,98 @@
-# Trabalho 2
+<h1 align="center">🌱 Computação Evolucionária — Trabalho 3</h1>
 
-## Índice
-- [Descrição](#Descrição)
-- [Funcionamento](#Funcionamento)
-- [Aplicação](#Aplicação)
-- [Descrição das classes](#Descrição-das-classes)
-- [Contato](#contato)
+<h2 align="center">NSGA‑II (Non‑Dominated Sorting Genetic Algorithm II)</h2>
 
-## Descrição
-O NSGA-II (Non-dominated Sorting Genetic Algorithm II) é um algoritmo evolutivo projetado para resolver problemas de otimização multiobjetivo. Ele é amplamente utilizado devido à sua eficiência em encontrar soluções de Pareto, mantendo um equilíbrio entre a exploração de diferentes soluções e a escolha das melhores soluções em problemas de otimização com duas ou mais dimensões.
+<p align="center">
+Implementação didática do algoritmo <strong>NSGA‑II</strong> em <strong>Java</strong>,
+voltado à <strong>otimização multiobjetivo</strong>, combinando ordenação não dominada
+e manutenção da diversidade por meio da <strong>Crowding Distance</strong>.
+</p>
 
-## Funcionamento
-- **População Inicial:** Geração de uma população inicial aleatória de indivíduos e cálculo dos valores das funções objetivo para cada indivíduo.
-- **Seleção:** Seleção dos indivíduos com base em um torneio binário para reprodução.
-- **Recombinação e Mutação:** Aplicação de operadores genéticos (crossover e mutação) para gerar uma nova população de descendentes.
-- **Combinação:** Combinação das populações dos pais e descendentes para formar uma população unificada.
-- **Classificação de Não-dominância:** Classificação da população unificada em frentes de Pareto.
-- **Cálculo da Crowding Distance:** Cálculo da distância de aglomeração para cada indivíduo dentro de sua respectiva frente.
-- **Seleção da Próxima Geração:** Seleção dos melhores indivíduos com base na classificação de não-dominância e na distância de aglomeração até atingir o tamanho da população original.
-- **Repetição:** O loop principal continua até que um critério de parada seja atingido (por exemplo, número máximo de gerações ou tempo de execução).
-
-## Aplicação
-- **Otimização Multiobjetivo:** Utilizado em problemas de otimização que envolvem a minimização ou maximização simultânea de duas ou mais funções objetivo.
-- **Seleção de Soluções:** Facilita a escolha de soluções não dominadas que são eficazes em termos de objetivos e bem distribuídas ao longo do espaço objetivo.
-
-## Descrição das classes
-
-### `Individuo`
-Representa um indivíduo no algoritmo evolutivo, contendo variáveis de decisão e valores de objetivos. Inclui métodos para avaliação das variáveis de decisão e para aplicação de operadores genéticos.
-
-### `Crossover`
-Interface para operações de crossover entre dois indivíduos. Define o método `getCrossover`, que combina os genes dos pais para gerar descendentes.
-
-### `CrossoverAritmetico`
-Implementa a interface `Crossover` usando um método de crossover aritmético. Este método combina os genes dos pais através de uma média ponderada para gerar novos indivíduos.
-
-### `MutationNone`
-Implementa a interface `Mutation` e define um operador de mutação que não altera os genes dos indivíduos. É utilizado em situações onde nenhuma mutação é desejada.
-
-### `MutationPolynomial`
-Implementa a interface `Mutation` e define um operador de mutação polinomial. Modifica os genes dos indivíduos com base em uma probabilidade e um índice de distribuição, proporcionando uma variação controlada dos genes.
-
-### `Mutation`
-Interface para operações de mutação em indivíduos. Define o método `getMutate`, que aplica alterações nos genes dos indivíduos, respeitando os limites inferiores e superiores.
-
-### `Problema`
-Classe abstrata que define métodos para avaliar variáveis de decisão e retornar o número de variáveis de decisão de um problema de otimização. Deve ser estendida por classes específicas para problemas concretos.
-
-### `ProblemaExemplo`
-Implementa a classe `Problema` para fornecer uma base para problemas de exemplo. Avalia as variáveis de decisão de acordo com uma função objetivo genérica.
-
-### `ProblemaShaffer`
-Implementa a classe `Problema` para o problema de Schaffer, que calcula os objetivos baseados em uma fórmula matemática específica com duas variáveis de decisão.
-
-### `CrowdingDistance`
-Avalia a distância de crowding para cada indivíduo em uma lista, que ajuda a manter a diversidade na população. Ordena os indivíduos com base em seus objetivos e na distância de crowding.
-
-### `FNDS`
-Implementa o algoritmo Fast Non-Dominated Sort para identificar e formar frentes de Pareto. Classifica a população em frentes baseadas na dominância e cria listas de indivíduos não dominados.
-
-### `Ponto`
-Representa um ponto no espaço objetivo, associado a um indivíduo. Contém informações sobre dominância e ranking, sendo utilizado no algoritmo de não-dominância para classificar os indivíduos.
-
-### `RepairSolution`
-Contém um método estático para ajustar variáveis que excedem os limites inferiores ou superiores definidos, garantindo que as soluções permaneçam dentro dos limites aceitáveis.
-
-## Contato
-
-Se você tiver alguma dúvida ou sugestão, entre em contato!
+<p align="center">
+  https://img.shields.io/badge/finalidade-acadêmica-blue
+  https://img.shields.io/badge/disciplina-Computação%20Evolucionária-green
+  https://img.shields.io/badge/tema-NSGA--II-purple
+  https://img.shields.io/badge/linguagem-Java-orange
+</p>
 
 ---
 
-*Este projeto foi criado por [Joice Barros de Figueiredo](https://github.com/JoyFigueiredo).*
+## 📘 Descrição
+
+Este trabalho apresenta a implementação do **NSGA‑II (Non‑Dominated Sorting Genetic Algorithm II)**,
+um dos algoritmos evolutivos mais utilizados para **otimização multiobjetivo**.
+
+O NSGA‑II busca encontrar um conjunto de soluções que represente uma boa aproximação
+da **fronteira de Pareto**, equilibrando simultaneamente:
+- **Qualidade das soluções** (não dominância)
+- **Diversidade** ao longo do espaço objetivo
+
+O algoritmo combina técnicas de **ordenação não dominada** e **Crowding Distance**,
+tornando‑se eficiente tanto em desempenho quanto em distribuição das soluções.
+
+---
+
+## 🧠 Conceitos Fundamentais
+
+### Otimização Multiobjetivo
+
+Problemas de otimização multiobjetivo envolvem a otimização simultânea de dois ou
+mais objetivos conflitantes. Em vez de uma única solução ótima, busca‑se um
+**conjunto de soluções não dominadas**, conhecido como **fronteira de Pareto**.
+
+---
+
+### NSGA‑II
+
+O NSGA‑II é um algoritmo evolutivo que se destaca por:
+
+- Utilizar **Fast Non‑Dominated Sort (FNDS)** para classificar a população em frentes de Pareto;
+- Empregar a **Crowding Distance** para preservar diversidade entre soluções;
+- Aplicar operadores genéticos como **seleção**, **crossover** e **mutação**;
+- Possuir **baixa complexidade computacional** em comparação com versões anteriores.
+
+---
+
+## ⚙️ Funcionamento do Algoritmo
+
+O funcionamento do NSGA‑II pode ser resumido nas seguintes etapas:
+
+1. **Inicialização da população**  
+   Geração de uma população inicial de soluções candidatas.
+
+2. **Avaliação dos objetivos**  
+   Cálculo dos valores dos objetivos para cada indivíduo.
+
+3. **Ordenação não dominada (FNDS)**  
+   Classificação da população em frentes de Pareto (F1, F2, …).
+
+4. **Cálculo da Crowding Distance**  
+   Medição da densidade de soluções para manutenção da diversidade.
+
+5. **Seleção**  
+   Escolha dos indivíduos com base no ranking de Pareto e na Crowding Distance.
+
+6. **Operadores genéticos**  
+   Aplicação de crossover e mutação para gerar uma nova população.
+
+7. **Iteração**  
+   O processo é repetido até que um critério de parada seja atingido.
+
+---
+
+## 🎯 Objetivo do Trabalho
+
+- Compreender o funcionamento do **NSGA‑II**;
+- Integrar conceitos de **FNDS** e **Crowding Distance**;
+- Aplicar algoritmos evolutivos à otimização multiobjetivo;
+- Analisar a formação e diversidade da **fronteira de Pareto**;
+- Consolidar o aprendizado em **Computação Evolucionária**.
+
+---
+
+## 📫 Autoria
+
+👩‍💻 **Joice Barros de Figueiredo**  
+🔗 https://github.com/JoyFigueiredo
+
+Projeto desenvolvido exclusivamente para fins acadêmicos.
