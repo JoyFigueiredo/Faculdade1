@@ -73,9 +73,9 @@ O funcionamento básico do K‑Medoids pode ser resumido em:
 O objetivo do K‑Medoids é minimizar a soma das distâncias entre cada ponto e o medoid
 do seu cluster:
 
-\[
+$$
 J = \sum_{i=1}^{k} \sum_{x \in C_i} d(x, m_i)
-\]
+$$
 
 Onde:
 
