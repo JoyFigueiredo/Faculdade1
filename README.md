@@ -1,8 +1,19 @@
 
-# 🎓 Faculdade Engenharia de Computação
+<h1 align="center">🎓 Faculdade – Engenharia de Computação</h1>
 
-Olá!  
-> Venho compartilhar meu conhecimento e deixar de fácil acesso os **trabalhos desenvolvidos durante a faculdade**.
+<p align="center">
+Repositório que reúne <strong>trabalhos, exercícios, projetos e materiais acadêmicos</strong>
+desenvolvidos ao longo do curso de <strong>Engenharia de Computação</strong>.
+</p>
+
+<p align="center">
+Organizado por disciplinas, com foco em estudo, prática e registro da trajetória acadêmica.
+</p>
+
+<p align="center">
+  <img src= "https://img.shields.io/badge/finalidade-acadêmica-blue">  
+  <img src= "https://img.shields.io/badge/curso-Engenharia%20de%20Computação-purple">  
+</p>
 
 ---
 
@@ -14,72 +25,123 @@ Olá!
 
 ---
 
+## 📚 Organização do Repositório
+
+
+Este repositório está estruturado por **disciplinas**, cada uma contendo códigos,
+relatórios, experimentos e implementações desenvolvidas ao longo do curso de
+**Engenharia de Computação**.
+
+O objetivo é centralizar o conteúdo acadêmico, facilitar revisões futuras e
+servir como **portfólio acadêmico**.
+
+---
+
 ## 🤖 Inteligência Artificial
-📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IA)
 
-Bem-vindo à seção **Inteligência Artificial**!  
-Aqui estão projetos que exploram conceitos fundamentais da IA, como busca, raciocínio e aprendizado.
+📌 **Pasta da disciplina:**  
+➡️ https://github.com/JoyFigueiredo/Faculdade1/tree/main/IA
 
-### Trabalhos
-- **Trabalho 1:** Dixon  
+Nesta seção estão reunidos projetos que exploram conceitos fundamentais da
+**Inteligência Artificial**, como busca, heurísticas e aprendizado supervisionado.
+
+### Trabalhos desenvolvidos
+
+- **Trabalho 1 – Dixon**  
   Implementação do método de Dixon para resolução de sistemas lineares.
-- **Trabalho 2:** n-Rainhas  
-  Algoritmo para resolver o problema das n-rainhas utilizando busca heurística.
-- **Trabalho 3:** Perceptron  
+
+- **Trabalho 2 – Problema das n‑Rainhas**  
+  Solução do problema das n‑rainhas utilizando técnicas de busca heurística.
+
+- **Trabalho 3 – Perceptron**  
   Implementação do modelo Perceptron para classificação linear.
 
 ---
 
 ## 🧠 Inteligência Computacional
-📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/IC)
 
-Bem-vindo à seção **Inteligência Computacional**!  
-Aqui você encontrará projetos relacionados a redes neurais e classificadores aplicados a problemas práticos.
+📌 **Pasta da disciplina:**  
+➡️ https://github.com/JoyFigueiredo/Faculdade1/tree/main/IC
 
-### Trabalhos
-- **Trabalho 1:** Base de dados triviais  
-  Implementação inicial para testar redes neurais em bases simples.
-- **Trabalho 2:** MLP para Bases Individuais  
-  Aplicação do Perceptron Multicamadas (MLP) na base individual de cada aluno.
-- **Trabalho 3:** MLP com Treino e Teste  
-  Reimplementação do trabalho anterior com divisão da base em treino e teste.
-- **Trabalho 4:** MLP com Estratégias  
-  Inclusão de estratégias como saída deslocada, erro ao quadrado, normalização e ajuste da camada intermediária.
-- **Trabalho 5:** Classificador Bayesiano  
+Esta seção contempla projetos voltados à **Inteligência Computacional**, com foco
+em **redes neurais artificiais** e métodos de classificação.
+
+### Trabalhos desenvolvidos
+
+- **Trabalho 1 – Bases Triviais**  
+  Implementação inicial para validação de redes neurais em bases simples.
+
+- **Trabalho 2 – MLP por Base Individual**  
+  Aplicação do Perceptron Multicamadas (MLP) utilizando a base individual de cada aluno.
+
+- **Trabalho 3 – MLP com Treino e Teste**  
+  Reestruturação do trabalho anterior com separação dos dados em treino e teste.
+
+- **Trabalho 4 – MLP com Estratégias**  
+  Inclusão de técnicas como normalização, erro quadrático, saída deslocada e ajuste
+  da camada intermediária.
+
+- **Trabalho 5 – Classificador Bayesiano**  
   Aplicação do classificador Bayesiano sobre a base individual.
 
 ---
 
 ## 🌱 Computação Evolucionária
-📌 **Repositório:** [Acesse aqui](https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE)
 
-Bem-vindo à seção **Computação Evolucionária**!  
-Aqui você encontrará projetos que abordam algoritmos evolutivos e técnicas de otimização multiobjetivo.
+📌 **Pasta da disciplina:**  
+➡️ https://github.com/JoyFigueiredo/Faculdade1/tree/main/CE
 
-### Trabalhos
-- **Trabalho 1:** Fast Non-Dominated Sort  
-  Algoritmo essencial para organizar soluções em frentes de Pareto.
-- **Trabalho 2:** Crowding Distance  
-  Métrica para manter diversidade na fronteira de Pareto.
-- **Trabalho 3:** NSGA-II  
-  Algoritmo evolutivo para otimização multiobjetivo.
-- **Trabalho 4:** *(Adicionar descrição aqui)*
+Esta seção reúne trabalhos relacionados a **algoritmos evolutivos** e
+**otimização multiobjetivo**.
+
+### Trabalhos desenvolvidos
+
+- **Trabalho 1 – Fast Non‑Dominated Sort**  
+  Implementação do algoritmo de ordenação por dominância de Pareto.
+
+- **Trabalho 2 – Crowding Distance**  
+  Implementação da métrica de distância para manutenção da diversidade das soluções.
+
+- **Trabalho 3 – NSGA‑II**  
+  Algoritmo evolutivo multiobjetivo amplamente utilizado na literatura.
+
+- **Trabalho 4**  
+  *(Em desenvolvimento / a ser documentado)*
 
 ---
 
 ## 🔍 Reconhecimento de Padrões
-📌 **Repositório:** https://github.com/JoyFigueiredo/Faculdade1/tree/main/RR
+**(Materiais do Professor Douglas)**
 
-Bem-vindo à seção **Reconhecimento de Padrões**!  
-Aqui você encontrará projetos que exploram técnicas de aprendizado de máquina aplicadas à identificação e classificação de padrões em dados.
+📌 **Pasta da disciplina:**  
+➡️ https://github.com/JoyFigueiredo/Faculdade1/tree/main/RP
 
-### Trabalhos
-- **Trabalho 1:** Classificadores Bayesianos  
-  Uso de estimadores de densidade (Gaussiano e KDE) e Naive Bayes para prever classes.
-- **Trabalho 2:** K-Nearest Neighbors (KNN)  
-  Comparação de diferentes métricas de distância (Euclidiana, Manhattan, Minkowski e Chebyshev).
-- **Trabalho 3:** K-Means e K-Medoids  
-  Algoritmos de agrupamento não supervisionado para identificar grupos e padrões ocultos nos dados.
+Esta seção reúne conteúdos desenvolvidos na disciplina de
+**Reconhecimento de Padrões**, com foco em **modelagem estatística**, **classificação**
+e **agrupamento de dados**. Os trabalhos priorizam a compreensão conceitual e a
+implementação didática dos algoritmos.
+
+### Trabalhos desenvolvidos
+
+- **Trabalho 1 – Estimadores de Probabilidade**  
+  Estudo e implementação de **estimadores de densidade probabilística**, incluindo
+  o **Estimador Gaussiano (paramétrico)** e o **Kernel Density Estimation (KDE)**.
+  Os estimadores são utilizados como base para o cálculo de probabilidades e apoio
+  à classificação Bayesiana.  
+  🔗 https://github.com/JoyFigueiredo/Faculdade1/tree/main/RP/EstimadoresProbabilisticacorrigida
+
+- **Trabalho 2 – K‑Medoids (Clustering)**  
+  Implementação do algoritmo **K‑Medoids** para **agrupamento não supervisionado**,
+  utilizando medoids como representantes reais dos clusters. O trabalho aborda
+  cálculo de distâncias, função de custo e processo iterativo de convergência.  
+  🔗 https://github.com/JoyFigueiredo/Faculdade1/tree/main/RP/KMedoids
+
+- **Trabalho 3 – K‑Nearest Neighbors (KNN)**  
+  Implementação do algoritmo **KNN**, um método de **classificação baseado em
+  proximidade**, que atribui a classe de uma amostra com base nas classes de seus
+  vizinhos mais próximos, considerando medidas de distância entre os dados.  
+  🔗 https://github.com/JoyFigueiredo/Faculdade1/tree/main/RP/KNN
+``
 
 ---
 
