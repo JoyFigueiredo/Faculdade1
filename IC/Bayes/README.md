@@ -38,9 +38,9 @@ disciplina de **Inteligência Computacional**.
 O classificador se baseia no **Teorema de Bayes**, que relaciona a probabilidade
 condicional entre classes e atributos:
 
-\[
+$$
 P(C|X) = \frac{P(X|C) \cdot P(C)}{P(X)}
-\]
+$$
 
 Onde:
 - `P(C)` é a probabilidade a priori da classe  
